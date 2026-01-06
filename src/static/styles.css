@@ -90,12 +90,40 @@ section h3 {
 }
 
 .participants-section ul {
-  margin-left: 20px;
+  list-style: none;
+  margin-left: 0;
 }
 
 .participants-section li {
   margin-bottom: 6px;
   color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
 }
 
 .participants-section em {
